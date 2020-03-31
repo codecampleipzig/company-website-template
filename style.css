@@ -1,0 +1,111 @@
+:root {
+  --text-color: #333;
+  --primary-color: #ff9b21;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  max-width: calc(1440px - 240px);
+  margin: auto;
+  margin-top: 6rem;
+}
+
+header nav {
+  margin-left: 13rem;
+  font-size: 1.6rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li+li {
+  margin-left: 4rem;
+}
+
+.logo img {
+  width: 169px;
+  height: 60px;
+}
+
+section.hero {
+  max-width: calc(1440px - 120px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  flex-grow: 1;
+  margin-left: 6rem;
+  margin-right: 1rem;
+}
+
+.hero-img {
+  flex-grow: 2;
+  padding-top: 7rem;
+}
+
+.hero-button {
+  border: 2px solid var(--primary-color);
+  margin-top: 2rem;
+  display: inline-flex;
+  cursor: pointer;
+  height: 5.5rem;
+  align-items: center;
+}
+
+.hero-button:hover {
+  background-color: var(--primary-color);
+}
+
+.hero-button:hover a {
+  color: white;
+}
+
+.hero-button-link {
+  padding: 1.7rem 1.5rem 1.4rem 1.5rem;
+}
+
+.hero-button-icon {
+  background-color: var(--primary-color);
+  color: white;
+  width: 5.5rem;
+  height: 100%;
+  display: flex;
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
